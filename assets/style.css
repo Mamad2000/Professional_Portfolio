@@ -1,30 +1,10 @@
 :root {
 	--Font_Dark_blue: #282832;
-	--background: #f0f4e6;
-	--white_text: #e0eae4;
-        --light_blue: #c3dffb;
+	--background: #fff; 
+	--white_text: #fff;
+	--light_blue: #c3dffb;
 }
-body {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.3;
-}
-nav a{
-        color: var(--light_blue);
-        font-weight: bold;
-        text-decoration: none;
-        
-}
-nav ul {
-        display: flex;
-        justify-content: space-between;
-        min-width: 500px;
-        /* align-content: flex-end; */
-}
-h1 {
-        font-size: 200%;
-        background-color: var(--light_blue);
-}
+
 html {
 	background-color: var(--Font_Dark_blue);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -32,18 +12,85 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+body {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.3;
+}
 header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1%;
-        background-color: var(--Font_Dark_blue);
-        color: #fff;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 1%;
+	background-color: var(--Font_Dark_blue);
+	color: #fff;
 
 }
-#Background_Header {
+nav a{
+	color: var(--light_blue);
+	font-weight: bold;
+	text-decoration: none;
         
 }
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	min-width: 500px;
+	/* align-content: flex-end; */
+	position: relative;
+	left: 200px;
+}
+h1 {
+	font-size: 200%;
+	background-color: var(--light_blue);
+}
+h2 {
+	font-size: 200%;
+	background-color: var(--light_blue);
+	color: var(--Font_Dark_blue);
+	font-size: large;
+	width: 200px;
+
+
+}
+/* Absolute positioning */
+#absolute-section {
+	position: relative;
+	bottom: 40px;
+	left: 1000px;
+}
+#relative-section {
+	position: relative;
+}
+
+
+img {
+	width: 100%;
+	max-height: 300px;
+	background-color: var(--background);
+}
+
+#main_content_background {
+	background-color: var(--white_text);
+}
+.boxes {
+	border-style: solid;
+	border-color: var(--light_blue);
+	border-width: 5px;
+	padding: 10px;
+	margin: 20px;
+	flex: 0 0 300px
+}
+
+.products {
+	flex: 4;
+	background-color: #fff;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+  }
 section {
 
 	
@@ -60,85 +107,35 @@ section {
 
 
 }
-.box-rows {
-	top: 20px;
-	text-align: center;
-	/* padding: 20px; */
-	/* margin: 30px auto; */
-	/* display: flex; */
-	/* flex-direction: row;
-	flex-wrap: wrap; */
-	/* min-height: ; */
-	flex: 1 0 30%;
-	/* margin-right: -1.5rem;
-	margin-left: -1.5rem;  */
-	/* Padding effect everything inside the border */
-	/* Margin effect everything outside of it */
-	margin: 10px;
-	width: 30%;
-	max-height: 600px;
-	outline: 2px dashed var(--white_text);
-	outline-offset: -2px;
 
-}
-div {
-	/* white space means if there's not enough space to fit, it will wrap */
-	white-space: pre-wrap;
-	/* overflow adds a scroll feature if it doesn't fit */
-    overflow: auto;
-    tab-size: 1;
-    padding: 1rem;
-	/* margin: 1rem; */
-    color: var(--white_text);
-    border-radius: 10px;
-    /* background-image: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% ); */
-    display: flex;
-    /* align-items: center; */
-	justify-content: flex-start;
-}
-.code-card pre {
-	/* set styles to make it so code wraps in <pre> instead of overflowing */
-	white-space: pre-wrap;
-	/* Overflow adds a scroll feature if content doesn't fit */
-	overflow: auto;
-	tab-size: 1;
-	/* padding: 1.2rem 1rem; */
-	/* margin: 20px; */
-	color: var(--gin);
-	border-radius: 8px;
-	/* use linear-gradient() function to create a fading background  */
-	background-image: linear-gradient(
-	  rgba(232, 102, 236, 0.3) 0%,
-	  rgba(232, 102, 236, 0.6) 100%
-	);
-	/* max-height: 20px;
-	min-height: 20px; */
-	min-height: 100%;
-	min-width: 100%;
-	width: 30%;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-	/* justify-content: center; */
-	flex-grow: 1;
-
-	/* display: flex; */
-	/* align-items: center; */
-  }
 h1, h2 {
 	color: var(--Font_Dark_blue);
 	margin: 0;
 
 }
 p {
-	color: var(--white_text)
+	color: var(--Font_Dark_blue)
 
 
+}
+
+.push_box_left {
+	margin-right: 1050px;
 }
 
 footer {
 	color: var(--Font_Dark_blue);
 	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	/* display: flex; */
+	justify-content: center;
 
+
+}
+footer ul a {
+	color: var(--Font_Dark_blue);
+    text-decoration:underline;
 }
 /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
 .card-column {
