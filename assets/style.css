@@ -1,0 +1,179 @@
+:root {
+	--Font_Dark_blue: #282832;
+	--background: #f0f4e6;
+	--white_text: #e0eae4;
+        --light_blue: #c3dffb;
+}
+body {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+}
+nav a{
+        color: var(--light_blue);
+        font-weight: bold;
+        text-decoration: none;
+        
+}
+nav ul {
+        display: flex;
+        justify-content: space-between;
+        min-width: 500px;
+        /* align-content: flex-end; */
+}
+h1 {
+        font-size: 200%;
+        background-color: var(--light_blue);
+}
+html {
+	background-color: var(--Font_Dark_blue);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        background-color: var(--Font_Dark_blue);
+        color: #fff;
+
+}
+#Background_Header {
+        
+}
+section {
+
+	
+	
+}
+
+.boxes-get-flexed {
+	
+	display: flex;
+	flex-direction: flex;
+	flex-wrap: wrap;
+	/* space between gives an even placement for the boxes */
+	justify-content: space-between;
+
+
+}
+.box-rows {
+	top: 20px;
+	text-align: center;
+	/* padding: 20px; */
+	/* margin: 30px auto; */
+	/* display: flex; */
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+	/* min-height: ; */
+	flex: 1 0 30%;
+	/* margin-right: -1.5rem;
+	margin-left: -1.5rem;  */
+	/* Padding effect everything inside the border */
+	/* Margin effect everything outside of it */
+	margin: 10px;
+	width: 30%;
+	max-height: 600px;
+	outline: 2px dashed var(--white_text);
+	outline-offset: -2px;
+
+}
+div {
+	/* white space means if there's not enough space to fit, it will wrap */
+	white-space: pre-wrap;
+	/* overflow adds a scroll feature if it doesn't fit */
+    overflow: auto;
+    tab-size: 1;
+    padding: 1rem;
+	/* margin: 1rem; */
+    color: var(--white_text);
+    border-radius: 10px;
+    /* background-image: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% ); */
+    display: flex;
+    /* align-items: center; */
+	justify-content: flex-start;
+}
+.code-card pre {
+	/* set styles to make it so code wraps in <pre> instead of overflowing */
+	white-space: pre-wrap;
+	/* Overflow adds a scroll feature if content doesn't fit */
+	overflow: auto;
+	tab-size: 1;
+	/* padding: 1.2rem 1rem; */
+	/* margin: 20px; */
+	color: var(--gin);
+	border-radius: 8px;
+	/* use linear-gradient() function to create a fading background  */
+	background-image: linear-gradient(
+	  rgba(232, 102, 236, 0.3) 0%,
+	  rgba(232, 102, 236, 0.6) 100%
+	);
+	/* max-height: 20px;
+	min-height: 20px; */
+	min-height: 100%;
+	min-width: 100%;
+	width: 30%;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	/* justify-content: center; */
+	flex-grow: 1;
+
+	/* display: flex; */
+	/* align-items: center; */
+  }
+h1, h2 {
+	color: var(--Font_Dark_blue);
+	margin: 0;
+
+}
+p {
+	color: var(--white_text)
+
+
+}
+
+footer {
+	color: var(--Font_Dark_blue);
+	text-align: center;
+
+}
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.card-column {
+	flex: 1 0 100%;
+	/* padding: 1.5rem; */
+	/* when the screen resizes, make it so our columns don't jump in size */
+	transition: flex-basis 500ms linear;
+	/* margin-bottom: 1.5rem; */
+	margin: 1.5rem;
+	background-image: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% );
+	text-align: left;
+
+}
+
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+	/* on tablets, set columns to only be 50% of the width and not grow */
+	.card-column {
+	  flex: 0 0 50%;
+	  max-width: 50%;
+	}
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+	header {
+	  width: 75%;
+	}
+  
+	.card-column {
+	  flex: 0 0 33.333%;
+	  max-width: 33.333%;
+	}
+  }

@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./assets/style.css">
 
+
+        <title>Document</title>
+</head>
+<body>
+    <header>
+		<h1>Lernantino</h1>
+		<nav>
+		  <ul>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Contact Me</a></li>
+			<li><a href="#">Resume</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	<section id = >
+		<h2>Cool Website Bro!</h2>
+
+	</section>
+	<!--display = flex only gets applied to what its inside of -->
+	<div class="boxes-get-flexed">
+		<section class="box-rows">
+			<h1>Flexbox Row</h1>
+			<h2>Use these three properties to create a Flexbox row layout.</h2>
+			<div class="card-column">
+			<!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+			<!-- Pre, here stands for pre formatting which does a default formatting for us -->
+			<pre class="code-block"><code>.row {
+				<p>.row { 
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+				}</p>
+				</code></pre>
+			</div>
+			<pre></code>
+		</section>
+
+		<section class = "box-rows">
+			<h1>Flexbox Column</h1>
+			<h2>Use this to create a Flexbox column layout.</h2>
+			<div class="card-column">
+				<pre class="code-block"><code>
+				<p>.column {
+					<br>
+					display: flex;
+					<br>
+					flex-direction: column
+					<br>
+				}</p>
+			</code></pre>
+			</div>
+		</section>
+
+		<section class="box-rows">
+			
+			<h1>CSS Grid Layout</h1>
+			<h2>Build a 12-column layout using CSS Grid</h2>
+			<div class="card-column">
+				<pre class="code-block"><code>
+				<p>.grid {
+					<br>
+					display: grid;
+					<br>
+					width: 100%;
+					<br>
+					grid-template-columns: repeat(12, 1fr);
+					<br>
+				}</p>
+				</code></pre>
+			</div>
+		</section>
+
+		<section class="box-rows">
+			<h1>Linear Gradients</h1>
+			<h2>This will create a background linear gradient from top to bottom.</h2>
+			<div class="card-column">
+				<pre class="code-block"><code>
+					<p>.linear-gradient-background {
+						background-image: linear-gradient(
+							rgba(232, 102, 236, 0.3) 0%,
+							rgba(232, 102, 236, 0.6) 100%
+					);
+				}</p>
+				</code></pre>
+			</div>
+		</section>
+		<section class="box-rows">
+			<h1>Box Transition Glow</h1>
+			<h2>Use transition and box shadows to glow on hover.</h2>
+			<div class="card-column">
+			<pre class="code-block"><code>
+				<p>.code-card .card-header {
+					<br>
+					border-radius: 8px;
+					<br>
+					transition: all 0.5s ease-in-out;
+					<br>
+				}
+				<br>
+				<br>
+				.code-card:hover,
+				<br>
+				.code-card:hover .card-header {
+					<br>
+					box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+					<br>
+				}</p>
+			</code></pre>
+			</div>
+		</section>
+		<section class="box-rows">
+			<h1>Overlay Card with Title</h1>
+			<h2>Use position properties and negative margins to raise elements higher than their natural starting point.</h2>
+			<div class="card-column">
+			<pre class="code-block"><code>
+				<p>.card-header {
+					<br>
+					position: relative;
+					<br>
+					margin-top: -20px;
+					<br>
+				}</p>
+			</code></pre>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<button>555.555.5555</button>
+		<button>lernantino@website.com</button>
+		<button>Github</button>
+		<button>Twitter</button>
+		<button>Spotify</button>						
+	</footer>
+</body>
+</html>
