@@ -5,6 +5,7 @@
 	--light_blue: #c3dffb;
 }
 
+/* Sets the html font stylem margins and background color */
 html {
 	background-color: var(--Font_Dark_blue);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -12,11 +13,13 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+/* The body must flex */
 body {
 	display: flex;
 	flex-direction: column;
 	line-height: 1.3;
 }
+/* Setting the header to mock the file */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -26,12 +29,14 @@ header {
 	color: #fff;
 
 }
+/* Setting the nav a font color and text style */
 nav a{
 	color: var(--light_blue);
 	font-weight: bold;
 	text-decoration: none;
         
 }
+/* Setting the nav unordered list to apear like the mockup */
 nav ul {
 	display: flex;
 	justify-content: space-between;
@@ -40,10 +45,12 @@ nav ul {
 	position: relative;
 	left: 200px;
 }
+/* h1 style */
 h1 {
 	font-size: 200%;
 	background-color: var(--light_blue);
 }
+/* h2 style */
 h2 {
 	font-size: 200%;
 	background-color: var(--light_blue);
@@ -59,15 +66,26 @@ h2 {
 	bottom: 40px;
 	left: 1000px;
 }
+/* Relative positioning */
 #relative-section {
 	position: relative;
 }
 
-
+/* images must be shown like this  */
 img {
 	width: 100%;
 	max-height: 300px;
 	background-color: var(--background);
+	min-height: 300px;
+	min-width: 450px;
+}
+
+#surfBoardStyle {
+	width: 100%;
+	max-height: 600px;
+	background-color: var(--background);
+	min-height: 400px;
+	min-width: 1000px;
 }
 
 #main_content_background {
@@ -91,11 +109,6 @@ img {
 	justify-content: space-evenly;
 	align-items: flex-start;
   }
-section {
-
-	
-	
-}
 
 .boxes-get-flexed {
 	
@@ -173,4 +186,4 @@ footer ul a {
 	  flex: 0 0 33.333%;
 	  max-width: 33.333%;
 	}
-  }
+}
