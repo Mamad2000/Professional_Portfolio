@@ -3,7 +3,9 @@
 	--background: #fff; 
 	--white_text: #fff;
 	--light_blue: #c3dffb;
+	--cream: #fdff86;
 }
+
 
 /* Sets the html font stylem margins and background color */
 html {
@@ -31,7 +33,7 @@ header {
 }
 /* Setting the nav a font color and text style */
 nav a{
-	color: var(--light_blue);
+	color: var(--cream);
 	font-weight: bold;
 	text-decoration: none;
         
@@ -48,12 +50,13 @@ nav ul {
 /* h1 style */
 h1 {
 	font-size: 200%;
-	background-color: var(--light_blue);
+	color: var(--cream);
+	background-color: var(--Font_Dark_blue);
+	
 }
 /* h2 style */
 h2 {
 	font-size: 200%;
-	background-color: var(--light_blue);
 	color: var(--Font_Dark_blue);
 	font-size: large;
 	width: 200px;
@@ -65,6 +68,8 @@ h2 {
 	position: relative;
 	bottom: 40px;
 	left: 1000px;
+	color: var(--cream);
+	background-color: var(--Font_Dark_blue);
 }
 /* Relative positioning */
 #relative-section {
@@ -75,7 +80,6 @@ h2 {
 img {
 	width: 100%;
 	max-height: 300px;
-	background-color: var(--background);
 	min-height: 300px;
 	min-width: 450px;
 }
@@ -129,7 +133,6 @@ img:focus {
 }
 
 h1, h2 {
-	color: var(--Font_Dark_blue);
 	margin: 0;
 
 }
