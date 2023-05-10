@@ -1,8 +1,5 @@
-# Week02-HW-Assignment
-Week 02 Assignment is about trying to build a website from scratch whilst trying to mock up to the given sample we were given.
-
-# Week01-Assignment
-
+# Professional Portfolio
+This is a simple webpage containing some of the work I completed during my USYD Fullstack Software development course.
 
 
 #Made by Mohammad Nabiei
