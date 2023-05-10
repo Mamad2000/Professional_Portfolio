@@ -4,6 +4,7 @@ This is a simple webpage containing some of the work I completed during my USYD 
 
 #Made by Mohammad Nabiei
 #Date: 24/11/2022
+#revisited at : 10/5/2023
 
 ## Description
 
@@ -11,8 +12,8 @@ Provide a short description explaining the what, why, and how of your project. U
 
 - What was your motivation?
 This is a mock up website I made from scratch that was given to me as an assignment
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-Homework assignment
+- Why did you build this project? 
+Showcase my personal and group projects I have completed.
 - What problem does it solve?
 Create a website from scratch
 - What did you learn?
